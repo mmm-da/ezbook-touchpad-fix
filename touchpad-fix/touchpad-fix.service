@@ -3,7 +3,8 @@ Description=Run script that restart psmouse modprobe module with "proto=imps"
 After=systemd-modules-load.service
 
 [Service]
-RemainAfterExit=true
-ExecStop=/usr/local/bin/touchpad-fix
+ExecStart=/usr/local/bin/touchpad-fix
 Type=oneshot
 
+[Install]
+WantedBy=multi-user.target
