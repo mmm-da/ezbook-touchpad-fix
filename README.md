@@ -3,7 +3,7 @@
 
 ## Instalation
 
-'''bash
+```bash
 chown +X ./install.sh
 sudo ./install.sh
-'''
+```
